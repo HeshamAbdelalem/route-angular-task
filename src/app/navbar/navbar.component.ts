@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+
 }
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 50) {
+    document.querySelector('nav')?.classList.remove('py-4')
+  } else {
+    document.querySelector('nav')?.classList.add('py-4')
+  }
+})
+

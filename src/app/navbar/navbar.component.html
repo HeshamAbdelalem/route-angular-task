@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top py-4">
   <div class="container">
     <a class="navbar-brand" href="#">Angular Framework Task</a>
     <button
@@ -15,18 +15,24 @@
     <div class="collapse navbar-collapse" id="collapsibleNavId">
       <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="#" aria-current="page"
+          <a
+            class="nav-link"
+            routerLinkActive="active"
+            routerLink="home"
+            aria-current="page"
             >Home <span class="visually-hidden">(current)</span></a
           >
         </li>
-        <li class="nav-item me-2">
-          <a class="nav-link active" href="#">About</a>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLinkActive="active" routerLink="portfolio"
+            >Portfolio</a
+          >
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Portfolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Contact</a>
+          <a class="nav-link" routerLinkActive="active" routerLink="contact"
+            >Contact</a
+          >
         </li>
       </ul>
     </div>
